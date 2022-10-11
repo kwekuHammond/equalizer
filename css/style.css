@@ -1,0 +1,223 @@
+body {
+    font-family: sans-serif;
+    background-image: url("../assets/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-sm {
+    padding: 0px 100px 0px 100px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    /* background-color: #2196F3; */
+    /* padding: 10px; */
+}
+
+.grid-container>div {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* padding: 20px 0; */
+    font-size: 30px;
+}
+
+.nav-item1 {
+    grid-column: 1 / span 2;
+}
+
+.page-title-text {
+    /* text-align: left; */
+    padding-left: 10px;
+}
+
+.nav-item2 {
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+
+.nav-item2-text {
+    text-align: center;
+}
+
+.nav-item3 {
+    grid-row: span 2;
+}
+
+.top-right-img {
+    width: 100%;
+    float: right;
+}
+
+main {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.parent {
+    margin: 0px 10px 0px 10px;
+    background-color: #191826;
+    height: 500px;
+    width: 80%;
+    border: 2px #191826;
+    border-radius: 20px;
+    z-index: 1;
+    position: absolute;
+    background-image: url("../assets/parent_img.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    background-size: 20%;
+}
+
+.illustration-app {
+    position: relative;
+    width: 20%;
+    z-index: 2;
+    bottom: 250px;
+    left: 70px;
+    padding-left: 100px;
+    /* padding-bottom: 200px; */
+}
+
+.button-container {
+    position: relative;
+    width: 400px;
+    height: 550px;
+    background-color: #FA7453;
+    z-index: 3;
+    border-radius: 5%;
+    top: 100px;
+    left: 200px;
+}
+
+.download-ios-btn {
+    background-color: black;
+    margin-bottom: 10px;
+    height: 60px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.download-ios-btn:hover {
+    background-color: #66E2DC;
+    margin-bottom: 10px;
+    height: 60px;
+    border-radius: 20px;
+}
+
+.download-andriod-btn {
+    background-color: white;
+    color: black;
+    height: 60px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.download-andriod-btn:hover {
+    background-color: #FFB964;
+    color: black;
+    height: 60px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.social-icons {
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* grid-gap: 1px; */
+}
+
+
+/* @media screen */
+@media screen and (max-width: 1200px) {
+    .parent {
+        width: 90%;
+    }
+
+    .button-container {
+        width: 400px;
+        height: 550px;
+        top: 150px;
+        left: 100px;
+    }
+
+    .illustration-app {
+        width: 23%;
+        left: 70px;
+        padding-left: 100px;
+        bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .illustration-app {
+        width: 25%;
+        left: 70px;
+        padding-left: 100px;
+        bottom: 100px;
+    }
+
+    .button-container {
+        width: 350px;
+        height: 550px;
+        top: 250px;
+        left: 0px;
+    }
+
+    footer {
+        /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+        /* grid-gap: 10px; */
+        text-align: center;
+        margin-top: 400px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .illustration-app {
+        width: 50%;
+        left: 0px;
+        right: 10px;
+        padding-left: 100px;
+        bottom: 250px;
+    }
+
+    .parent {
+        background-size: 50%;
+    }
+
+    .top-right-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .illustration-app {
+        width: 50%;
+        left: 0px;
+        right: 10px;
+        padding-left: 100px;
+        bottom: 200px;
+    }
+}
